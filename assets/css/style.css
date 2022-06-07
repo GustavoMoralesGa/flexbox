@@ -11,8 +11,8 @@
 
 .side-bar {
     max-height: 100%;
-    min-width: 25%;
-    width: 25%;
+    min-width: 15%;
+    width: 20%;
     border-right: 1px solid gray;
     background-color: white;
 }
@@ -20,14 +20,30 @@
     display: flex;
     justify-content: space-around;
 }
-.personal-profile img {
-    width: 40px;
-    border-radius: 50%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+
+.status-profile {
+    display: flex;
+    justify-content: space-between;
 }
 
+.status-profile img {
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
+.personal-title {
+    margin-left: 10px;
+}
+
+.icon-profile {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    color: gray;
+
+}
 
 /* BUTTON CHAT */
 
@@ -36,13 +52,28 @@
 .button-chat {
     display: flex;
     justify-content: center;
-    border-top: 2px solid gray ;
-    border-bottom: 2px solid gray;
+    border-top: 2px solid rgba(128, 128, 128, 0.437); ;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.437);
 }
 
 .button-chat button {
     margin-top: 2em;
     margin-bottom: 2em;
+    background-color: #A491D2;
+    border-color: #A491D2;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.btn:hover {
+    background-color: #CDC3E6;
+    border-color: #CDC3E6;
+}
+
+.btn:focus {
+    background-color: #E8EBE4;
+    border-color: #E8EBE4;
 }
 
 
@@ -51,9 +82,9 @@
 
 .contact {
     display: flex;
-    justify-content: space-around;
-    border-bottom: 2px solid gray;
-
+    justify-content: flex-start;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.437);
+    padding-left: 8%;
 }
 
 .contact img {
@@ -64,6 +95,11 @@
 
 }
 
+.contact-friend {
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
 
 /* Container Chat */
 
@@ -72,7 +108,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #EFEFEE;
+    background-color: #E8EBE4;
 }
 
 .image-chat {
